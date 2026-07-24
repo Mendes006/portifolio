@@ -1,0 +1,60 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.content > .page {
+  animation: page-fade-in 0.3s ease-out both;
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-link,
+.home__socials .badge {
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.home__socials .badge:hover {
+  color: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+  border-radius: 50%;
+  background-color: var(--accent-cyan);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease,
+    margin 0.2s ease;
+  will-change: transform;
+}
+.cursor-dot--active {
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+  background-color: var(--accent-magenta);
+}
+
+@media (pointer: coarse) {
+  .cursor-dot { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .content > .page { animation: none; }
+  .cursor-dot { display: none; }
+}

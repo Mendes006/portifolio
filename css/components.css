@@ -1,0 +1,112 @@
+.comment {
+  color: var(--syntax-comment);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-bright);
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text);
+  background-color: #2d2d2d;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+
+.badge:hover {
+  border-color: var(--accent-cyan);
+  color: var(--text-bright);
+}
+
+.badge__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  background-color: var(--text-dim);
+}
+.badge__dot--green   { background-color: var(--accent-green); }
+.badge__dot--cyan    { background-color: var(--accent-cyan); }
+.badge__dot--magenta { background-color: var(--accent-magenta); }
+.badge__dot--yellow  { background-color: var(--accent-yellow); }
+
+a.badge {
+  text-decoration: none;
+}
+a.badge:hover {
+  text-decoration: none;
+}
+
+.card {
+  background-color: var(--bg-sidebar);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  transition: border-color 0.2s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--accent-cyan);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.btn-primary,
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.18s ease, border-color 0.18s ease,
+    color 0.18s ease, transform 0.12s ease;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.btn-primary:active,
+.btn-outline:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background-color: var(--bg-statusbar);
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #1b8ce0;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text);
+  border-color: #5a5a5a;
+}
+.btn-outline:hover {
+  border-color: var(--text-bright);
+  color: var(--text-bright);
+  background-color: #ffffff0d;
+  text-decoration: none;
+}

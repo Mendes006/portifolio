@@ -1,0 +1,13 @@
+# Config local do editor / agente (não precisa ir pro GitHub)
+.claude/
+
+# Dependências (caso um dia use build/npm)
+node_modules/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

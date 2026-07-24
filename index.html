@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maicon Mendes - Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+</head>
+<body>
+  <div class="editor">
+    <aside class="sidebar">
+      <div class="sidebar__header">EXPLORER</div>
+      <div class="sidebar__project">
+        <span class="chevron">˅</span> PORTFOLIO-MAICON-MENDES
+      </div>
+
+      <ul class="file-tree" id="fileTree">
+        <li class="file" data-tab="home"        data-ext="tsx">
+          <span class="file__icon icon-tsx">⬢</span> home.tsx
+        </li>
+        <li class="file" data-tab="about"       data-ext="html">
+          <span class="file__icon icon-html">&lt;&gt;</span> about.html
+        </li>
+        <li class="file" data-tab="projects"    data-ext="js">
+          <span class="file__icon icon-js">JS</span> projects.js
+        </li>
+        <li class="file" data-tab="skills"      data-ext="json">
+          <span class="file__icon icon-json">{ }</span> skills.json
+        </li>
+        <li class="file" data-tab="experience"  data-ext="ts">
+          <span class="file__icon icon-ts">TS</span> experience.ts
+        </li>
+        <li class="file" data-tab="contact"     data-ext="css">
+          <span class="file__icon icon-css">#</span> contact.css
+        </li>
+      </ul>
+    </aside>
+
+    <div class="main">
+      <nav class="tabbar" id="tabBar">
+        <div class="tab" data-tab="home"        data-ext="tsx">
+          <span class="file__icon icon-tsx">⬢</span> home.tsx <span class="tab__close">×</span>
+        </div>
+        <div class="tab" data-tab="about"       data-ext="html">
+          <span class="file__icon icon-html">&lt;&gt;</span> about.html <span class="tab__close">×</span>
+        </div>
+        <div class="tab" data-tab="projects"    data-ext="js">
+          <span class="file__icon icon-js">JS</span> projects.js <span class="tab__close">×</span>
+        </div>
+        <div class="tab" data-tab="skills"      data-ext="json">
+          <span class="file__icon icon-json">{ }</span> skills.json <span class="tab__close">×</span>
+        </div>
+        <div class="tab" data-tab="experience"  data-ext="ts">
+          <span class="file__icon icon-ts">TS</span> experience.ts <span class="tab__close">×</span>
+        </div>
+        <div class="tab" data-tab="contact"     data-ext="css">
+          <span class="file__icon icon-css">#</span> contact.css <span class="tab__close">×</span>
+        </div>
+      </nav>
+
+      <main class="content" id="content"></main>
+    </div>
+  </div>
+
+  <footer class="statusbar" id="statusBar">
+    <div class="statusbar__left">
+      <span class="statusbar__item">
+        <span class="statusbar__icon">⑂</span> main
+      </span>
+      <span class="statusbar__item" id="statusLang">TypeScript React</span>
+    </div>
+    <div class="statusbar__right">
+      <span class="statusbar__item">UTF-8</span>
+      <span class="statusbar__item">LF</span>
+      <span class="statusbar__item statusbar__name">Mendes @ portfolio</span>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
